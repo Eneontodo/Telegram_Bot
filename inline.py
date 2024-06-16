@@ -7,7 +7,6 @@ ass.add(InlineKeyboardButton(text="Холодильник", callback_data="Хо�
         InlineKeyboardButton(text="Морозильная камера", callback_data="Морозильная камера"),
         InlineKeyboardButton(text="Стиральная машина", callback_data="Стиральная машина"),
         InlineKeyboardButton(text="Телевизор", callback_data="Телевизор"),
-        InlineKeyboardButton(text="Вибратор", callback_data="Вибратор"),
         InlineKeyboardButton(text="Духовка", callback_data="Духовка"),
         InlineKeyboardButton(text="Мобильный телефон", callback_data="Телефон")
         )
