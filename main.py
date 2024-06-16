@@ -41,10 +41,6 @@ async def catalogue(callback: types.CallbackQuery):
         await bot.send_message(chat_id=callback.from_user.id,
                                text=f"вы выбрали:\t{callback.data},\nмодель:\tHi IPHIX-32H181MSY\nстоимость:\t<s>{getenv('PRICE_TV')}</s>/ 0$\nза "
                                     f"доставку:{getenv('PRICE_DOST')}", parse_mode=types.ParseMode.HTML)
-    elif callback.data == "Вибратор":
-        await bot.send_message(chat_id=callback.from_user.id,
-                               text=f"вы выбрали:\t{callback.data},\nстоимость:\t<s>{getenv('PRICE_VIBER')}</s>/ 0$\nза "
-                                    f"доставку:{getenv('PRICE_DOST')}", parse_mode=types.ParseMode.HTML)
     elif callback.data == "Телефон":
         await bot.send_message(chat_id=callback.from_user.id,
                                text=f"вы выбрали:\t{callback.data},\nмодель:\t15 Pro Maximum\nстоимость:\t<s>{getenv('PRICE_PHONE')}</s>/ 0$\nза "
